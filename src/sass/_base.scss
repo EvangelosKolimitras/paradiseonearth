@@ -1,0 +1,74 @@
+@import "keyframesbgcolorprimary";
+
+/* COLOR VARIABLES */
+$color_primary: #3f7b4e;
+$color_primary_dark: #5ce72d;
+
+$color_secondary: $color_primary;
+
+$color_grey_light_1: #f9f7f6;
+$color_grey_light_2: #cdcdcd;
+
+$color_grey_dark_1: #54483A;
+$color_grey_dark_2: #455a31;
+
+/* FONT VARIABLES */
+$font_primary: 'Nunito', sans-serif;
+$font_display: 'Josefin Sans', sans-serif;
+
+/* RESPONSIVE BREAKPOINTS */
+$bp_largest: 75em;    /* 1200px */
+$bp_large: 62.5em;    /* 1000px */
+$bp_medium: 50em;     /* 800px */
+$bp_small: 37.5em;    /* 600px */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 10px/16px = 62.5% -> 1rem = 10px */
+
+  @media only screen and (max-width: $bp_largest) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-grey-dark-2;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+body {
+  font-family: $font_primary;
+  color: $color_grey_light_2;
+  font-weight: 400;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+  @media only screen and (max-width: $bp_large) {
+    grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  }
+
+  @media only screen and (max-width: $bp_medium) {
+    grid-template-rows: 6rem calc(100vh - 6rem);
+  }
+}
+
+a:link,
+a:visited {
+  color: $color_grey_light_2;
+  text-decoration: none;
+}

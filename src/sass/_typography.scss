@@ -1,0 +1,61 @@
+@import "base";
+.heading {
+    font-family: $font_display;
+    font-weight: 400;
+
+    &_1 {
+        font-size: 4.5rem;
+        color: $color_grey_light_1;
+        line-height: 1;
+    }
+    &_2 {
+        font-size: 4rem;
+
+        &__light {
+            color: $color_grey_light_1;
+        }
+
+        &__dark {
+            color: $color_grey_dark_1;
+        }
+    }
+    &_3 {
+        font-size: 1.6rem;
+        color: $font_primary;
+        text-transform: uppercase;
+
+    }
+    &_4 {
+        font-size: 1.5rem;
+
+        &__light {
+            color: $color_grey_light_1;
+        }
+
+        &__dark {
+            color: $color_grey_dark_1;
+        }
+    }
+}
+
+.btn {
+    background-color: $color_primary;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-family: $font_display;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1.8rem 3rem;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+        background-color: $color_primary_dark;
+    }
+}
+
+.mb_sm { margin-bottom: 2rem; }
+.mb_md { margin-bottom: 3rem; }
+.mb_lg { margin-bottom: 4rem; }
+.mb_hg { margin-bottom: 8rem; }

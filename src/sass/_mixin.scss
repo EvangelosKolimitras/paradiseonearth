@@ -1,0 +1,10 @@
+
+@mixin colorBgAnim(){
+    background: linear-gradient(2deg, #178e6f, #33a788, #56c1a4, #7ddcc2, #50a38c, #3c7d6b, #27876c, #119b74);
+    background-size: 1600% 1600%;
+
+    -webkit-animation: AnimationName 57s ease infinite;
+    -moz-animation: AnimationName 57s ease infinite;
+    -o-animation: AnimationName 57s ease infinite;
+    animation: AnimationName 57s ease infinite;
+}

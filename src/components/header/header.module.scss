@@ -1,0 +1,68 @@
+@import "../../sass/_base";
+@import "../../sass/_typography";
+
+.header {
+  background-color: $color_grey_dark_1;
+  grid-column: full-start / col-end 6;
+  background-image: linear-gradient(rgba($color_secondary, .43), rgba($color_secondary, .03)), url(./img/cuba.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 8rem 8rem;
+
+  display: grid;
+  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+  grid-template-columns: minmax(min-content, max-content);
+  grid-row-gap: 1.5rem;
+  justify-content: center;
+
+  @media only screen and (max-width: $bp_medium) {
+    grid-column: 1 / -1;
+  }
+
+  @media only screen and (max-width: $bp_small) {
+    padding: 5rem;
+  }
+
+  &__logo {
+    height: 10rem;
+    justify-self: center;
+  }
+
+  &__btn {
+    align-self: start;
+    justify-self: start;
+  }
+
+  &__seenon_text {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 3rem;
+    align-items: center;
+    align-self: end;
+
+    font-size: 3rem;
+    color: $color_grey_light_1;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 1px;
+      display: block;
+      background-color: currentColor;
+    }
+  }
+
+  &__seenon_logos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 3rem;
+    justify-items: center;
+    align-items: center;
+
+    img {
+      max-height: 5rem;
+      max-width: 100%;
+      filter: brightness(70%);
+    }
+  }
+}

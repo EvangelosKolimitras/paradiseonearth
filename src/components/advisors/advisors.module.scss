@@ -1,0 +1,59 @@
+@import "../../sass/_base";
+@import "../../sass/_typography";
+@import "../../sass/keyframesbgcolorprimary";
+@import "../../sass/mixin";
+.advisors {
+  @include colorBgAnim();
+  grid-column: col-start 7 / full-end;
+  padding: 3rem;
+
+
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  grid-row-gap: 2rem;
+
+
+  @media only screen and (max-width: $bp_medium) {
+    grid-column: 1 / -1;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: min-content;
+    grid-column-gap: 2rem;
+    grid-row-gap: 5vh;
+
+    @media only screen and (max-width: $bp_medium) {
+      grid-template-columns: repeat(3, min-content max-content);
+    }
+
+    @media only screen and (max-width: $bp_small) {
+      grid-template-columns:  max-content;
+    }
+  }
+
+  &__details {
+    text-align: center;
+  }
+  &__img {
+    width: 10rem;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+
+    @media only screen and (max-width: $bp_medium) {
+      grid-column: 1 / -1;
+    }
+
+  }
+
+  &__email {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: $color_grey_light_2;
+    margin-top: -3px;
+    margin-bottom: 2.25rem;
+  }
+}
