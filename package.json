@@ -2,6 +2,17 @@
   "name": "cuba-paradise",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Evangelos Kolimitras",
+    "email": "evangeloskolimitras@outlook.com",
+    "url": "https://e-kolimitras.s3.eu-central-1.amazonaws.com/index.html?fbclid=IwAR1U_puc1f4jTgW9Ak6mxC1hWfAWUA8AtmUJHD2zz3WJSv0d1n8vmmlb_8U"
+  },
+  "contributors": [
+    "Evangelos Kolimitras"
+  ],
+  "maintainers": [
+    "Evangelos Kolimitras"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
