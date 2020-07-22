@@ -14,8 +14,9 @@ const Story = () => {
                 <h2 className={`${S.heading_2} ${S.heading_2__dark} ${S.mb_md}`}>
                     &ldquo; we loved each of our moments &rdquo;
                 </h2>
+                <h1>Evangelos & Bianca</h1>
                 <p className={S.story__text}>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                    We had the best time of our life by the beach.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
                     distinctio necessitatibus pariatur voluptatibus. Quidem consequatur
                     harum volupta!
                 </p>
