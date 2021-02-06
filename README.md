@@ -1,13 +1,7 @@
-## PARADISE ON EARTH
+## Paradise
 
-### A ReactJS project with SCSS architecture design
+## A React based project with custom SCSS styling
 
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-You can also check the [Project here](https://paradiseonearth2020.web.app/)
+In the project directory, you can run `yarn start`
+Check the [Project here](https://paradiseonearth2020.web.app/).
 
